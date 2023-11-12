@@ -1,5 +1,26 @@
 /* Add flexbox to the navbars. */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
 
+.intra-page-links {
+  font: 36px Arial, sans-serif;
+  display: block;
+  border: 2px;
+  border-style: solid;
+  color: #000;
+  border-color: #674ea7ff;
+  background-color: #674ea7ff;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.intra-page-links:hover {
+  border-color: #c00;
+}
 /* Format the size of all images. */
 
 /* Style the font color. */

@@ -3,21 +3,21 @@
 Create a personal portfolio using **HTML** and **CSS**. For those looking for an added challenge, feel free to incorporate **JavaScript**.
 
 ## Planning
-- [ ] 1. Look at sample portfolios in the “Inspiration & Ideas” section.
-- [ ] 2. Complete the “Brainstorming” section.
-- [ ] 3. Complete the “Wireframing” section.
-- [ ] 4. Clone or Fork the Starter Code.
+- [*] 1. Look at sample portfolios in the “Inspiration & Ideas” section.
+- [*] 2. Complete the “Brainstorming” section.
+- [*] 3. Complete the “Wireframing” section.
+- [*] 4. Clone or Fork the Starter Code.
 
 ## HTML Tasks
 
 ### All pages
-- [ ] 5. Update the title tags.
-- [ ] 6. Link a CSS file to your pages.
-- [ ] 7. Include a navbar to link pages.
+- [*] 5. Update the title tags.
+- [*] 6. Link a CSS file to your pages.
+- [*] 7. Include a navbar to link pages.
 - [ ] 8. Add class attributes to your HTML elements.
 
 ### index.html
-- [ ] 9. Add a header with your name.
+- [*] 9. Add a header with your name.
 - [ ] 10. Add a headshot (this could also be on your about or contact page instead).
 
 ### about.html
