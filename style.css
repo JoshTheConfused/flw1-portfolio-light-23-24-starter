@@ -23,6 +23,10 @@
 }
 /* Format the size of all images. */
 
+.profile-picture {
+  max-height: 50%;
+  max-width: 50%;
+}
 /* Style the font color. */
 
 /* Style the background with a color or image. */
