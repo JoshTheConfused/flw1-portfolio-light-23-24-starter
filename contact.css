@@ -1,0 +1,35 @@
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+.contact-list {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact-links {
+  padding: 5px;
+  border: 2px;
+  border-style: solid;
+  color: #000;
+  border-color: #674ea7ff;
+  background-color: #674ea7ff;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration-line: none;
+}
+
+.contact-links:hover {
+  border-color: #c00;
+}
