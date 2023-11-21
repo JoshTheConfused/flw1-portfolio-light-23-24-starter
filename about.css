@@ -1,8 +1,12 @@
 .about-bio {
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 5px;
 }
 
 .about-profile-picture {
-  width: 240px;
-  height: 180px;
+  max-height: 579px;
+  max-width: 772px;
+  padding: 5px;
 }
