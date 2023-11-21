@@ -6,7 +6,16 @@
 }
 
 .about-profile-picture {
-  max-height: 579px;
-  max-width: 772px;
+  max-height: 450px;
+  max-width: 600px;
   padding: 5px;
+}
+
+p {
+  padding: 0px;
+  border: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: justify;
+  font-size: 45px;
 }
