@@ -5,7 +5,9 @@ html {
 body {
   /*background-image: url("images/ProfilePicture.jpeg");*/
   background-color: #93c47dff;
-  font: 24px Arial, sans-serif;
+  font-family: sans-serif;
+  font: Arial;
+  font-size: 24px;
 }
 
 .navbar {
@@ -23,7 +25,7 @@ body {
   border-color: #674ea7ff;
   background-color: #674ea7ff;
   padding: 5px;
-  font-weight: bold;
+  font-weight: 900;
   text-decoration-line: none;
 }
 
