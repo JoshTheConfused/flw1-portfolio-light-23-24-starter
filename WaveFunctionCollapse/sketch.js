@@ -16,6 +16,9 @@ let WFC;
 
 function preload() {
   tileImages.push(loadImage("WaveFunctionCollapse/images/Ground.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/FlowersPink.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/FlowersBlue.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/FlowersOrange.png"));
   tileImages.push(loadImage("WaveFunctionCollapse/images/River.png"));
   tileImages.push(loadImage("WaveFunctionCollapse/images/RiverTurn.png"));
   tileImages.push(loadImage("WaveFunctionCollapse/images/Bridge.png"));
@@ -34,12 +37,12 @@ function setup() {
 
   //create tiles array containing every tile
   tiles.push(new Tile(tileImages[0], [0, 0, 0, 0]));
-  tiles.push(new Tile(tileImages[1], [1, 0, 1, 0]));
-  tiles.push(new Tile(tileImages[2], [1, 1, 0, 0]));
-  tiles.push(new Tile(tileImages[3], [1, 2, 1, 2]));
-  tiles.push(new Tile(tileImages[4], [2, 2, 0, 0]));
-  tiles.push(new Tile(tileImages[5], [0, 2, 2, 2]));
-  tiles.push(new Tile(tileImages[6], [2, 2, 2, 2]));
+  tiles.push(new Tile(tileImages[4], [1, 0, 1, 0]));
+  tiles.push(new Tile(tileImages[5], [1, 1, 0, 0]));
+  tiles.push(new Tile(tileImages[6], [1, 2, 1, 2]));
+  tiles.push(new Tile(tileImages[7], [2, 2, 0, 0]));
+  tiles.push(new Tile(tileImages[8], [0, 2, 2, 2]));
+  tiles.push(new Tile(tileImages[9], [2, 2, 2, 2]));
 
   //adds every rotated tile
   const stop = tiles.length;
@@ -92,6 +95,21 @@ function draw() {
   //console.table(leastEntropy);
   leastEntropy = leastEntropy.filter((a) => !a.collapsed);
   if (leastEntropy.length === 0) { //stops when every tile is collapsed
+    for (let i = 0; i < gridSpaceTotal; i++) {
+      let state = grid[i].options[0];
+      console.log(state);
+      if (state === 0) { //Adds flowers, randomly rotated
+        let img = tileImages[Math.floor(Math.random() * 4)];
+        let rotations = Math.floor(Math.random() * 4);
+        const newImg = createGraphics(img.width, img.height);
+        newImg.imageMode(CENTER);
+        newImg.translate(img.width / 2, img.height / 2);
+        newImg.rotate(HALF_PI * rotations);
+        newImg.image(img, 0, 0);
+        image(newImg, (i % gridWidth) * cellSize, Math.floor(i / gridWidth) * cellSize, cellSize, cellSize);
+      }
+    }
+    noLoop();
     return;
   }
   leastEntropy.sort((a, b) => {
