@@ -7,8 +7,10 @@ const tileImages = [];
 const tiles = [];
 const grid = [];
 const cellSize = 25;
-const gridWidth = Math.floor((window.innerWidth / cellSize) + 1);
-const gridHeight = Math.floor((window.innerHeight / cellSize) + 1);
+const width = window.innerWidth;
+const height = window.innerHeight;
+const gridWidth = Math.floor((width / cellSize) + 1);
+const gridHeight = Math.floor((height / cellSize) + 1);
 const gridSpaceTotal = gridWidth * gridHeight; //total number of cells
 let WFC;
 
@@ -23,7 +25,7 @@ function preload() {
 }
 
 function setup() {
-  WFC = createCanvas(window.innerWidth, window.innerHeight);
+  WFC = createCanvas(width, height);
   WFC.parent("#WFCBackground");
   //context = WFC.getContext("2d");
   
