@@ -7,17 +7,10 @@ const tileImages = [];
 const tiles = [];
 const grid = [];
 const cellSize = 25;
-let gridWidth = 30;
-let gridHeight = 30;
+const gridWidth = Math.floor((window.innerWidth / cellSize) + 1);
+const gridHeight = Math.floor((window.innerHeight / cellSize) + 1);
 const gridSpaceTotal = gridWidth * gridHeight; //total number of cells
-
-function mousePressed() {
-  console.log("---");
-  for (let i of grid) {
-    console.log(i.options[0]);
-  }
-  redraw();
-}
+let WFC;
 
 function preload() {
   tileImages.push(loadImage("WaveFunctionCollapse/images/Ground.png"));
@@ -30,9 +23,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(window.innerHeight - 325, window.innerHeight - 325);
-  //gridWidth = width / cellSize;
-  //gridHeight = height / cellSize;
+  WFC = createCanvas(window.innerWidth, window.innerHeight);
+  WFC.parent("#WFCBackground");
+  //context = WFC.getContext("2d");
+  
+  //gridWidth = Math.floor((width / cellSize) + 1);
+  //gridHeight = Math.floor((height / cellSize) + 1);
 
   //create tiles array containing every tile
   tiles.push(new Tile(tileImages[0], [0, 0, 0, 0]));
@@ -66,10 +62,13 @@ function setup() {
 
 function draw() {
   //console.table(grid);
-  //background(220);
+  background(147, 196, 125);
 
-  const w = width / gridWidth;
-  const h = height / gridHeight
+  //const w = width / gridWidth;
+  //const h = height / gridHeight;
+
+  
+  //console.log(`w: ${gridWidth}, h: ${gridHeight}`);
 
   for (let i = 0; i < gridSpaceTotal; i++) {
     let cell = grid[i];
@@ -78,11 +77,13 @@ function draw() {
       let index = cell.options[0];
       image(tiles[index].img, (i % gridWidth) * cellSize, Math.floor(i / gridWidth) * cellSize, cellSize, cellSize);
     }
-    else {
-      fill(0);
+    /*else {
+      fill(152, 196, 21);
       rect((i % gridWidth) * cellSize, Math.floor(i / gridWidth) * cellSize, cellSize, cellSize)
-    }
+    }*/
   }
+
+  //document.querySelector("#WFCBackground").innerHTML = WFC;
 
   //Creates a new Tile array holding every tile of least entropy
   let leastEntropy = grid.slice();
@@ -120,7 +121,10 @@ function draw() {
   //Updates entropy of all uncollapsed tiles in grid
   for (let j = 0; j < gridHeight; j++) {
     for (let i = 0; i < gridWidth; i++) {
-      let index = i + (j * gridHeight);
+      //console.log("i: " + i);
+      //console.log("j: " + j);
+      let index = i + (j * gridWidth);
+      //console.log("index: " + index);
       //console.log(index + ". Before:");
       //console.table(grid[index]);
       if (!grid[index].collapsed) {
@@ -132,6 +136,7 @@ function draw() {
         //look up
         if (j > 0) {
         //^make sure tile is not in the top row
+          //console.log(index - gridWidth);
           let up = grid[index - gridWidth];
           let validOptions = [];
           for (let option of up.options) {
