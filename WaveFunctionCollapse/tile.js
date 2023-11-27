@@ -3,7 +3,6 @@ All Credit for this implementation goes to The Coding Train / Daniel Shiffman: h
 This was coded almost exactly to his implementation as shown in the above video
 Original Wave Function Collapse: https://github.com/mxgmn/WaveFunctionCollapse*/
 
-//tile class
 class Tile {
   constructor(img, edges) {
     this.img = img;
@@ -16,14 +15,14 @@ class Tile {
   }
 
   rotate(rotations) {
-    //rotate image
+    //Rotate image
     const newImg = createGraphics(this.img.width, this.img.height);
     newImg.imageMode(CENTER);
     newImg.translate(this.img.width / 2, this.img.height / 2);
     newImg.rotate(HALF_PI * rotations);
     newImg.image(this.img, 0, 0);
 
-    //rotate edges
+    //Rotate edges
     const numEdges = 4;
     const newEdges = [];
     for (let i = 0; i < numEdges; i++) {
@@ -33,7 +32,7 @@ class Tile {
     return new Tile(newImg, newEdges);
   }
 
-  analyze(tiles) {
+  analyze(tiles) { //Create lists of connectable tiles in each direction
     for (let i = 0; i < tiles.length; i++) {
       //Check connection up
       if (tiles[i].edges[2] === this.edges[0]) {

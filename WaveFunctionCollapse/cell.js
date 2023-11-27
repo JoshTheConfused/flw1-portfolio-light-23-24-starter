@@ -3,15 +3,14 @@ All Credit for this implementation goes to The Coding Train / Daniel Shiffman: h
 This was coded almost exactly to his implementation as shown in the above video
 Original Wave Function Collapse: https://github.com/mxgmn/WaveFunctionCollapse*/
 
-//cell class
 class Cell {
   constructor(val) {
     this.collapsed = false;
 
-    if (val instanceof Array) {
+    if (val instanceof Array) { //Options parameter can be array...
       this.options = val;
     }
-    else {
+    else { //...Or length at which to generate array [0, 1, 2, ..., n]
       this.options = [];
       for (let i = 0; i < val; i++) {
         this.options[i] = i;
