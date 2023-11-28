@@ -75,8 +75,10 @@ function draw() {
 
   for (let i = 0; i < collapsed.length; i++) { //Draw every collapsed cell
     let cell = collapsed[i];
-    let index = cell.options[0];
-    image(tiles[index].img, cell.x * cellSize, cell.y * cellSize, cellSize, cellSize);
+    if (cell.options[0] != 1) {
+      let index = cell.options[0];
+      image(tiles[index].img, cell.x * cellSize, cell.y * cellSize, cellSize, cellSize);
+    }
   }
 
   waveFunctionCollapse(collapsed, uncollapsed, grid, gridWidth, gridHeight);
