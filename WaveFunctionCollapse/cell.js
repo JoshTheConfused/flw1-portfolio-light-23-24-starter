@@ -4,8 +4,10 @@ This was coded almost exactly to his implementation as shown in the above video
 Original Wave Function Collapse: https://github.com/mxgmn/WaveFunctionCollapse*/
 
 class Cell {
-  constructor(val) {
+  constructor(val, x, y) {
     this.collapsed = false;
+    this.x = x;
+    this.y = y;
 
     if (val instanceof Array) { //Options parameter can be array...
       this.options = val;
