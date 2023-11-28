@@ -22,13 +22,13 @@ const gridSpaceTotal = gridWidth * gridHeight; //Total number of cells
 let WFC;
 
 function preload() { //Load all tile images into an array
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Ground.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/River.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/RiverTurn.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Bridge.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/RoadTurn.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/RoadT.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/RoadCross.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/Ground.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/River.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/RiverTurn.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/Bridge.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/RoadTurn.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/RoadT.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Home/RoadCross.png"));
 }
 
 function setup() {
