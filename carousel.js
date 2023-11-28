@@ -1,31 +1,31 @@
-let left = document.getElementById('left');
-let right = document.getElementById('right');
-let description = document.getElementById('activity-description');
-let image = document.getElementById('activity-image');
+let left = document.getElementById("left");
+let right = document.getElementById("right");
+let description = document.getElementById("activity-description");
+let image = document.getElementById("activity-image");
 let curSlide = 0;
 let slideData = [
   {
-    description: "###",
-    imgSrc: "images/###.png"
+    description: "@@@",
+    imgSrc: "images/@@@.png"
   },
   {
-    description: "%%%",
+    description: "&&&",
     imgSrc: "images/%%%.png"
   }
-]
+];
 
-function loadSlideData(slideIndex) {
+function setSlideData(slideIndex) {
   slideIndex %= slideData.length;
   description.innerHTML = slideData[slideIndex].description;
   //image.src = slideData[slideIndex].imgSrc;
 }
 
-loadSlideData(curSlide);
+setSlideData(curSlide);
 left.addEventListener("click", function() {
   curSlide--;
-  loadSlideData(curSlide);
+    setSlideData(curSlide);
 });
 right.addEventListener("click", function() {
   curSlide++;
-  loadSlideData(curSlide);
+    setSlideData(curSlide);
 });
