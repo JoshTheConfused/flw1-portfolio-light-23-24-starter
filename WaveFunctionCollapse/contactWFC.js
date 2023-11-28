@@ -40,14 +40,14 @@ function setup() {
   WFC.parent("#WFCBackground"); //Attach canvas to div containing whole home page
 
   //Create tiles array containing every tile
-  tiles.push(new Tile(tileImages[0], [0, 0, 0, 0]));
-  tiles.push(new Tile(tileImages[1], [1, 1, 1, 1]));
-  tiles.push(new Tile(tileImages[2], [0, 1, 1, 1]));
-  tiles.push(new Tile(tileImages[3], [0, 1, 0, 1]));
-  tiles.push(new Tile(tileImages[4], [0, 0, 1, 1]));
-  tiles.push(new Tile(tileImages[5], [1, 0, 0, 0]));
-  tiles.push(new Tile(tileImages[6], [1, 0, 1, 0]));
-  tiles.push(new Tile(tileImages[7], [1, 1, 0, 0]));
+  tiles.push(new Tile(tileImages[0], ["0", "0", "0", "0"]));
+  tiles.push(new Tile(tileImages[1], ["1", "1", "1", "1"]));
+  tiles.push(new Tile(tileImages[2], ["0", "1", "1", "1"]));
+  tiles.push(new Tile(tileImages[3], ["0", "1", "0", "1"]));
+  tiles.push(new Tile(tileImages[4], ["0", "0", "1", "1"]));
+  tiles.push(new Tile(tileImages[5], ["1", "0", "0", "0"]));
+  tiles.push(new Tile(tileImages[6], ["1", "0", "1", "0"]));
+  tiles.push(new Tile(tileImages[7], ["1", "1", "0", "0"]));
 
   //Adds every rotated tile
   const stop = tiles.length;

@@ -3,6 +3,21 @@ All Credit for this implementation goes to The Coding Train / Daniel Shiffman: h
 This was coded almost exactly to his implementation as shown in the above video
 Original Wave Function Collapse: https://github.com/mxgmn/WaveFunctionCollapse*/
 
+//Reverse a string
+function reverseString(s) {
+  let arr = s.split("");
+  arr = arr.reverse();
+  return arr.join("");
+}
+
+//Compare two edges
+function compareEdge(a, b) {
+  if (a.length == 1 && b.length == 1) {
+    return a == b;
+  }
+  return a == reverseString(b);
+}
+
 class Tile {
   constructor(img, edges) {
     this.img = img;
@@ -35,20 +50,20 @@ class Tile {
   analyze(tiles) { //Create lists of connectable tiles in each direction
     for (let i = 0; i < tiles.length; i++) {
       //Check connection up
-      if (tiles[i].edges[2] === this.edges[0]) {
-        this.up.push(i)
+      if (compareEdge(tiles[i].edges[2], this.edges[0])) {
+        this.up.push(i);
       }
       //Check connection right
-      if (tiles[i].edges[3] === this.edges[1]) {
-        this.right.push(i)
+      if (compareEdge(tiles[i].edges[3], this.edges[1])) {
+        this.right.push(i);
       }
       //Check connection down
-      if (tiles[i].edges[0] === this.edges[2]) {
-        this.down.push(i)
+      if (compareEdge(tiles[i].edges[0], this.edges[2])) {
+        this.down.push(i);
       }
       //Check connection left
-      if (tiles[i].edges[1] === this.edges[3]) {
-        this.left.push(i)
+      if (compareEdge(tiles[i].edges[1], this.edges[3])) {
+        this.left.push(i);
       }
     }
   }
