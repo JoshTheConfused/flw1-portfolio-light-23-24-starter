@@ -1,4 +1,12 @@
+.about-body {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .about-bio {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -6,12 +14,14 @@
 }
 
 .about-profile-picture {
+  z-index: 1;
   max-height: 450px;
   max-width: 600px;
   padding: 5px;
 }
 
 #bio{
+  z-index: 1;
   padding: 0px;
   border: 0px;
   margin-top: auto;
@@ -21,7 +31,20 @@
 }
 
 .interests-carousel {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.carousel-button {
+  z-index: 1;
+}
+
+#activity-description {
+  z-index: 1;
+}
+
+#activity-image {
+  z-index: 1;
 }
