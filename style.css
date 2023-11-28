@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  z-index: 1;
   background-color: #93c47dff;
   font-family: sans-serif;
   font: Arial;
@@ -31,4 +32,11 @@ body {
 
 .intra-page-links:hover {
   border-color: #c00;
+}
+
+#WFCBackground {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

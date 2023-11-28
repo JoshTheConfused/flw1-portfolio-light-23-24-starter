@@ -6,9 +6,15 @@ Original Wave Function Collapse: https://github.com/mxgmn/WaveFunctionCollapse*/
 function waveFunctionCollapse(collapsed, uncollapsed, grid, gridWidth, gridHeight) {
   let leastEntropy = uncollapsed.slice();
   
-  //Stops when every tile is collapsed
+  //Resets when every tile is collapsed
   if (leastEntropy.length === 0) {
-    noLoop();
+    uncollapsed.splice(0, uncollapsed.length);
+    collapsed.splice(0, collapsed.length);
+    for (let i = 0; i < gridSpaceTotal; i++) {
+      let cell = new Cell(tiles.length, i % gridWidth, Math.floor(i / gridWidth));
+      grid[i] = cell;
+      uncollapsed.push(cell);
+    }
     return;
   }
   

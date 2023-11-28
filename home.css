@@ -1,5 +1,4 @@
 .homepage {
-  /*background-image: url("images/ProfilePicture.jpeg");*/
   display: flex;
   flex-direction: column;
   height: 99%;
@@ -24,12 +23,4 @@
   border-radius: 50%;
   height: 200px;
   width: 200px;
-}
-
-
-#WFCBackground {
-  z-index: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
