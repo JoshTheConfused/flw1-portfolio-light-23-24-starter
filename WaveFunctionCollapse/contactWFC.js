@@ -3,7 +3,7 @@ All Credit for this implementation goes to The Coding Train / Daniel Shiffman: h
 This was coded almost exactly to his implementation as shown in the above video
 Original Wave Function Collapse: https://github.com/mxgmn/WaveFunctionCollapse
 
-This tileset (circles) was taken from the original WFC github (linked above)*/
+This tileset (circles) was taken from the original WFC github and color-modified*/
 
 const tileImages = [];
 const tiles = [];
@@ -24,14 +24,14 @@ const gridSpaceTotal = gridWidth * gridHeight; //Total number of cells
 let WFC;
 
 function preload() { //Load all tile images into an array
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/b.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/w.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/b_half.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/b_i.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/b_quarter.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/w_half.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/w_i.png"));
-  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/w_quarter.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/blue.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/green.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/blue_half.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/blue_i.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/blue_quarter.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/green_half.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/green_i.png"));
+  tileImages.push(loadImage("WaveFunctionCollapse/images/Contact/green_quarter.png"));
   
 }
 
