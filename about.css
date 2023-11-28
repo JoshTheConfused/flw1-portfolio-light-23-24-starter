@@ -11,11 +11,17 @@
   padding: 5px;
 }
 
-p {
+#bio{
   padding: 0px;
   border: 0px;
   margin-top: auto;
   margin-bottom: auto;
   text-align: justify;
   font-size: 45px;
+}
+
+.interests-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
