@@ -15,6 +15,7 @@ let slideData = [
 ]
 
 function loadSlideData(slideIndex) {
+  slideIndex %= slideData.length;
   newDescription = slideData[slideIndex].description;
   description.innerHTML = newDescription;
   //image.src = slideData[slideIndex].imgSrc
@@ -23,15 +24,9 @@ function loadSlideData(slideIndex) {
 loadSlideData(curSlide);
 left.addEventHandler("click", function() {
   curSlide--;
-  if (curSlide < 0) {
-    curSlide = slideData.length - 1;
-  }
   loadSlideData(curSlide);
 });
 right.addEventHandler("click", function() {
   curSlide++;
-  if (curSlide > slideData.length - 1) {
-    curSlide = 0;
-  }
   loadSlideData(curSlide);
 });
