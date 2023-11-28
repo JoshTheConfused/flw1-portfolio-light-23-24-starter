@@ -16,17 +16,16 @@ let slideData = [
 
 function loadSlideData(slideIndex) {
   slideIndex %= slideData.length;
-  newDescription = slideData[slideIndex].description;
-  description.innerHTML = newDescription;
-  //image.src = slideData[slideIndex].imgSrc
+  description.innerHTML = slideData[slideIndex].description;
+  //image.src = slideData[slideIndex].imgSrc;
 }
 
 loadSlideData(curSlide);
-left.addEventHandler("click", function() {
+left.addEventListener("click", function() {
   curSlide--;
   loadSlideData(curSlide);
 });
-right.addEventHandler("click", function() {
+right.addEventListener("click", function() {
   curSlide++;
   loadSlideData(curSlide);
 });
