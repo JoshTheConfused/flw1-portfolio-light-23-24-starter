@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Federman - Projects</title>
@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- imports JS file -->
-</head>
-<body>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+    <script defer src="WaveFunctionCollapse/WFC.js"></script>
+    <script defer src="WaveFunctionCollapse/projectsWFC.js"></script>
+    <script defer src="WaveFunctionCollapse/tile.js"></script>
+    <script defer src="WaveFunctionCollapse/cell.js"></script>
+  </head>
+  <body>
+    <div id="WFCBackground"></div>
     <!-- Add navbar to link all html pages. -->
-  <div class="navbar">
-    <a href="index.html" class="intra-page-links">Home</a>
-    <a href="about.html" class="intra-page-links">About</a>
-    <a href="projects.html" class="intra-page-links">Projects</a>
-    <a href="contact.html" class="intra-page-links">Contact</a>
-  </div>
+    <div class="navbar">
+      <a href="index.html" class="intra-page-links">Home</a>
+      <a href="about.html" class="intra-page-links">About</a>
+      <a href="projects.html" class="intra-page-links">Projects</a>
+      <a href="contact.html" class="intra-page-links">Contact</a>
+    </div>
     <!-- 
         Include at least 4 coding projects. For each project, include:
         - Project name
@@ -26,11 +32,11 @@
         - Short description of project
         - Screenshot of project 
     -->
-    <h1>
-      Projects
-    </h1>
-    <div>
-      <p>This is a blank template.</p>
+    <div id="project-list">
+      <div class="project-list-entry">
+        <p class="project-description"></p>
+        <img class="project-image">
+      </div>
     </div>
   </body>
 </html>
