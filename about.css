@@ -5,7 +5,7 @@ body {
   height: 100%;
 }
 
-.about-bio {
+#about-bio {
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -13,7 +13,7 @@ body {
   padding: 5px;
 }
 
-.about-profile-picture {
+#about-profile-picture {
   z-index: 1;
   max-height: 450px;
   max-width: 600px;
@@ -30,7 +30,7 @@ body {
   font-size: 45px;
 }
 
-.interests-carousel {
+#interests-carousel {
   z-index: 1;
   display: flex;
   flex-direction: row;

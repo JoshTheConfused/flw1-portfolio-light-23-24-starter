@@ -1,11 +1,11 @@
-.homepage {
+body {
   display: flex;
   flex-direction: column;
   height: 99%;
   justify-content: space-between;
 }
 
-.my-name {
+#my-name {
   z-index: 1;
   width: 185px;
   font-size: 36px;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.profile-picture {
+#profile-picture {
   z-index: 1;
   border: 10px;
   border-radius: 50%;
