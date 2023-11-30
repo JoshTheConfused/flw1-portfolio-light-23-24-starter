@@ -2,7 +2,10 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
+
+h1 {
+  text-align: center;
 }
 
 #about-bio {

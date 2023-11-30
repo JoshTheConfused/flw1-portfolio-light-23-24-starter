@@ -5,16 +5,34 @@ let description = document.getElementById("activity-description");
 let activityImage = document.getElementById("activity-image");
 
 let curSlide = 0;
-let slideData = 
-[
-  {
-    description: "@@@",
-    imgSrc: "images/@@@.png"
-  },
-  {
-    description: "&&&",
-    imgSrc: "images/%%%.png"
-  }
+
+let shakespeare = {
+  description: "Shakespeare",
+  imgSrc: ""
+};
+let frisbee = {
+  description: "Frisbee",
+  imgSrc: ""
+};
+let poetry = {
+  description: "Poetry Club",
+  imgSrc: ""
+};
+let skiing = {
+  description: "Shredding",
+  imgSrc: ""
+};
+let computers = {
+  description: "Building my computer",
+  imgSrc: ""
+};
+
+let slideData = [
+  shakespeare,
+  frisbee,
+  poetry,
+  skiing,
+  computers
 ];
 
 function setSlideData(slideIndex) {
