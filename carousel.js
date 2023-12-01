@@ -8,23 +8,23 @@ let curSlide = 0;
 
 let shakespeare = {
   description: "Shakespeare",
-  imgSrc: ""
+  imgSrc: "shakespeare"
 };
 let frisbee = {
   description: "Frisbee",
-  imgSrc: ""
+  imgSrc: "frisbee"
 };
 let poetry = {
   description: "Poetry Club",
-  imgSrc: ""
+  imgSrc: "poetry"
 };
 let skiing = {
   description: "Shredding",
-  imgSrc: ""
+  imgSrc: "skiing"
 };
 let computers = {
   description: "Building my computer",
-  imgSrc: ""
+  imgSrc: "computer"
 };
 
 let slideData = [
@@ -41,7 +41,7 @@ function setSlideData() {
   }
   curSlide %= slideData.length; //Wrap slides
   description.innerHTML = slideData[curSlide].description;
-  //activityImage.src = slideData[slideIndex].imgSrc;
+  activityImage.src = `images/${slideData[curSlide].imgSrc}.jpeg`;
 }
 
 setSlideData();
