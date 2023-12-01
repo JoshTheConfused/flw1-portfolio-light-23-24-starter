@@ -35,18 +35,21 @@ let slideData = [
   computers
 ];
 
-function setSlideData(slideIndex) {
-  slideIndex %= slideData.length; //Wrap slides
-  description.innerHTML = slideData[slideIndex].description;
+function setSlideData() {
+  if (curSlide < 0) {
+    curSlide += slideData.length //Keep slideIndex positive
+  }
+  curSlide %= slideData.length; //Wrap slides
+  description.innerHTML = slideData[curSlide].description;
   //activityImage.src = slideData[slideIndex].imgSrc;
 }
 
-setSlideData(curSlide);
+setSlideData();
 left.addEventListener("click", function() {
   curSlide--;
-  setSlideData(curSlide);
+  setSlideData();
 });
 right.addEventListener("click", function() {
   curSlide++;
-  setSlideData(curSlide);
+  setSlideData();
 });
