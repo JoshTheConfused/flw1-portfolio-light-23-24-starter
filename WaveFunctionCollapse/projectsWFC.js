@@ -10,7 +10,7 @@ const tiles = [];
 const grid = [];
 let collapsed = [];
 let uncollapsed = [];
-const cellSize = 14; //Cells are always 14x14 pixels.
+const cellSize = 21; //Cells are always 21x21 pixels.
 
 //Canvas dimensions are set each time the page is loaded.
 const w = window.innerWidth;
