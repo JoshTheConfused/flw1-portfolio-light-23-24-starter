@@ -52,13 +52,14 @@ h1 {
 
 .carousel-button {
   color: #000;
-  z-index: 1;
+  z-index: 2;
   border: 2px;
   border-style: solid;
   border-color: #674ea7ff;
-  font-size: 24px;
   border-radius: 50%;
+  font-size: 24px;
   font-weight: 900;
+  text-align: center;
   background-color: #674ea7ff;
 }
 
