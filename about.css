@@ -40,6 +40,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 20px;
+  align-items: center;
 }
 
 #carousel-content {
@@ -51,6 +52,17 @@ h1 {
 
 .carousel-button {
   z-index: 1;
+  border: 2px;
+  border-style: solid;
+  border-color: #674ea7ff;
+  font-size: 24px;
+  border-radius: 50%;
+  font-weight: 900;
+  background-color: #674ea7ff;
+}
+
+.carousel-button:hover {
+  border-color: #c00;
 }
 
 #activity-description {
