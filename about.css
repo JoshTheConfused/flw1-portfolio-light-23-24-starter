@@ -51,6 +51,7 @@ h1 {
 }
 
 .carousel-button {
+  color: #000;
   z-index: 1;
   border: 2px;
   border-style: solid;
@@ -68,9 +69,11 @@ h1 {
 #activity-description {
   z-index: 1;
   width: 35vw;
+  padding: 5px;
 }
 
 #activity-image {
   z-index: 1;
   width: 50vw;
+  padding: 5px;
 }
