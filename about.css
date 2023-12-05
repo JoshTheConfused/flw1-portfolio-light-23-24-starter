@@ -67,10 +67,15 @@ h1 {
   border-color: #c00;
 }
 
+.italics {
+  font-style: italic;
+}
+
 #activity-description {
   z-index: 1;
   width: 35vw;
   padding: 5px;
+  font-size: 2vw;
 }
 
 #activity-image {
