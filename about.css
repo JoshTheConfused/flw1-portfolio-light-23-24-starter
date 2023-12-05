@@ -32,6 +32,7 @@ h1 {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 3vw;
+  background-color: #93c47dff;
 }
 
 #interests-carousel {
@@ -76,6 +77,7 @@ h1 {
   width: 35vw;
   padding: 5px;
   font-size: 2vw;
+  background-color: #93c47dff;
 }
 
 #activity-image {
