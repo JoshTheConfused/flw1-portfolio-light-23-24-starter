@@ -29,7 +29,7 @@ body {
   text-align: left;
   z-index: 1;
   width: 40vw;
-  font-size: 2.5vw;
+  font-size: 2.7vw;
 }
 
 .project-image {
@@ -40,5 +40,5 @@ body {
 .project-link {
   text-decoration-line: none;
   font-weight: 900;
-  color: #1ab7d6;
+  color: #1794ad;
 }
