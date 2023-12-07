@@ -85,3 +85,24 @@ h1 {
   width: 50vw;
   padding: 5px;
 }
+
+#page-dots {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dots-wrapper {
+  width: 24px;
+  background-color: rgba(147, 196, 125, 0.8);
+}
+
+.dot {
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  background-color: #444;
+  border-radius: 50%;
+  margin: 7px;
+}

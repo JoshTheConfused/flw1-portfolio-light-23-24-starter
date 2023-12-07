@@ -3,6 +3,11 @@ let left = document.getElementById("left");
 let right = document.getElementById("right");
 let description = document.getElementById("activity-description");
 let activityImage = document.getElementById("activity-image");
+let dot1 = document.getElementById("dot-1");
+let dot2 = document.getElementById("dot-2");
+let dot3 = document.getElementById("dot-3");
+let dot4 = document.getElementById("dot-4");
+let dot5 = document.getElementById("dot-5");
 
 let curSlide = 0;
 
@@ -35,6 +40,8 @@ let slideData = [
   computers
 ];
 
+let dots = [dot1, dot2, dot3, dot4, dot5];
+
 function setSlideData() {
   if (curSlide < 0) {
     curSlide += slideData.length //Keep slideIndex positive
@@ -42,6 +49,10 @@ function setSlideData() {
   curSlide %= slideData.length; //Wrap slides
   description.innerHTML = slideData[curSlide].description;
   activityImage.src = `images/${slideData[curSlide].imgSrc}.jpeg`;
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].style.backgroundColor = "#444";
+  }
+  dots[curSlide].style.backgroundColor = "#1794ad";
 }
 
 setSlideData();
