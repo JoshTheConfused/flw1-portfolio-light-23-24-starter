@@ -17,8 +17,8 @@ body {
   padding: 15px;
   border-style: solid;
   border: 2px;
-  border-color: rgba(219, 219, 219, 0.8);
-  background-color: rgba(219, 219, 219, 0.8);
+  border-color: rgba(219, 219, 219, 0.9);
+  background-color: rgba(219, 219, 219, 0.9);
   margin: 10px;
   display: flex;
   flex-direction: row;

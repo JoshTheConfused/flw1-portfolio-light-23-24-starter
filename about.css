@@ -32,7 +32,7 @@ h1 {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 3vw;
-  background-color: rgba(147, 196, 125, 0.8);
+  background-color: rgba(147, 196, 125, 0.9);
 }
 
 #interests-carousel {
@@ -77,7 +77,7 @@ h1 {
   width: 35vw;
   padding: 5px;
   font-size: 2vw;
-  background-color: rgba(147, 196, 125, 0.8);
+  background-color: rgba(147, 196, 125, 0.9);
 }
 
 #activity-image {
@@ -95,7 +95,7 @@ h1 {
 
 .dots-wrapper {
   width: 24px;
-  background-color: rgba(147, 196, 125, 0.8);
+  background-color: rgba(147, 196, 125, 0.9);
 }
 
 .dot {
