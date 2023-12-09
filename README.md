@@ -1,0 +1,3 @@
+This is a website/portfolio which goes over a lot of what I do (at the time of creating this, at least), including a general desription of some hobbies and links to various projects.
+It was created under the Code Nation fellowship at Etsy in New York, which provided some basic structural code and taught me how to create almost all of this.
+It is also important to mention that the background animation on every page uses Wave Function Collapse (https://github.com/mxgmn/WaveFunctionCollapse), which I coded most of by following along to the video on the algorithm by The Coding Train(https://www.youtube.com/watch?v=rI_y2GAlQFM).
