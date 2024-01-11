@@ -83,6 +83,7 @@ h1 {
 #activity-image {
   z-index: 1;
   width: 50vw;
+  height: 13.33vw
   padding: 5px;
 }
 
